@@ -19,10 +19,10 @@
             <div class="text-end">
                 {% if user.is_authenticated %}
                 <a href="/cart"><button type="button" class="btn btn-primary me-2">Корзина</button></a>
-                <a href="/logout"></a><button type="button" class="btn btn-danger">Выйти</button></a>
+                <a href="/logout"><button type="button" class="btn btn-danger">Выйти</button></a>
                 {% else %}
                 <a href="/register"><button type="button" class="btn btn-outline-light me-2">Регистрация</button></a>
-                <a href="{% url 'login' %}"></a><button type="button" class="btn btn-warning">Войти</button></a>
+                <a href="{% url 'login' %}"><button type="button" class="btn btn-warning">Войти</button></a>
                 {% endif %}
             </div>
         </div>
